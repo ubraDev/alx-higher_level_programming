@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-"""Define a class Square."""
-
 class Square:
     def __init__(self, size):
         self.__size = size
@@ -12,10 +10,10 @@ print(my_square.__dict__)
 
 try:
     print(my_square.size)
-except Exception as e:
+except AttributeError as e:
     print(e)
 
 try:
     print(my_square.__size)
-except Exception as e:
+except AttributeError as e:
     print(e)
