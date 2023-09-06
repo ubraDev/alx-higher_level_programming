@@ -1,0 +1,5 @@
+example_object = "Hello, World!"
+
+memory_address = id(example_object)
+
+print(f"Memory Address: {memory_address}")
